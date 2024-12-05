@@ -1,0 +1,92 @@
+input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+input::placeholder {
+  color: #333;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(68.4, 157.5, 72);
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.main, .second {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1, h3 {
+  color: #4caf50;
+  font-size: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+form {
+  margin-top: 2rem;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+form .haveAccount {
+  margin-top: 1rem;
+}
+form .haveAccount p {
+  font-size: 0.875rem;
+}
+form .haveAccount a {
+  font-size: 0.875rem;
+  color: #4caf50;
+  text-decoration: none;
+}
+form .haveAccount a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

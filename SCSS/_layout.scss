@@ -1,0 +1,54 @@
+@use 'abstracts' as *;
+.main, .second {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  // @include abstracts.box-shadow(#000);  
+  text-align: center;
+}
+
+h1, h3 {
+  color: $primary-color;
+  font-size: $font-size-large;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: $font-size-base;
+  color: $text-color;
+}
+
+form {
+  margin-top: 2rem;
+  text-align: left;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: $text-color;
+  }
+
+  .haveAccount {
+    margin-top: 1rem;
+
+    p {
+      font-size: $font-size-small;
+    }
+
+    a {
+      font-size: $font-size-small;
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
