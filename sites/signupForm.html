@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Sign Up">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <!-- External Styles -->
-    <link rel="stylesheet" href="/styles/css/styles.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/styles/css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for icons -->
 </head>
 <body>
-    <div class="outer-container">
-        <div class="main">
-            <h2>Create an Account</h2>
-            <form>
-                <div class="input-group">
-                    <div class="input-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <input type="text" id="name" placeholder="Enter your full name" required>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <input type="password" id="password" placeholder="Create a password" required>
-                </div>
-
-                <button type="submit">Sign Up</button>
-
-                <div class="haveAccount">
-                    <p>Already registered? <a href="loginForm.html">Login here</a></p>
-                </div>
-            </form>
+  <div class="outer-container">
+    <div class="main">
+      <h2>Sign Up</h2>
+      <form action="/submit-signup" method="POST">
+        <div class="input-group">
+          <div class="input-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <input type="text" name="username" placeholder="Username" required>
         </div>
+        <div class="input-group">
+          <div class="input-icon">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <div class="input-icon">
+            <i class="fa fa-lock"></i>
+          </div>
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="input-group">
+          <div class="input-icon">
+            <i class="fa fa-lock"></i>
+          </div>
+          <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="haveAccount">
+        <p>Already have an account? <a href="loginForm.html">Login here</a>.</p>
+      </div>
     </div>
+  </div>
 </body>
 </html>
