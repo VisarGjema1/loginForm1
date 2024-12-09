@@ -173,3 +173,16 @@ label, .haveAccount p {
   background-color: rgba(0, 0, 0, 0.5); 
   z-index: 0;
 }
+
+#contact {
+  background-color: rgb(30, 26, 26);
+  color: #e6e6e6;
+  padding-bottom: 0; /* Ensure no extra padding at the bottom */
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 1rem;
+  margin-top: 0; /* Remove any top margin to eliminate the gap */
+}
