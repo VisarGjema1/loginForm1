@@ -8,7 +8,12 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #343a40;
 }
 
@@ -31,11 +36,28 @@ header .logo {
 .nav-link {
   font-size: 1rem;
   margin-right: 1rem;
-  color: #343a40 !important;
+  color: #ffffff !important;
   text-decoration: none;
 }
-.nav-link.active, .nav-link:hover {
+
+.nav-link.active,
+.nav-link:hover {
   color: #28a745 !important;
+}
+
+.nav-item .btn-success {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .btn-success:hover {
+  color: #ffffff;
+  background-color: #28a745;
+  border-radius: 4px;
 }
 
 footer {
@@ -44,9 +66,11 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
 footer a {
   color: #28a745;
 }
+
 footer a:hover {
   color: rgb(51.6956521739, 206.3043478261, 87);
 }
@@ -61,6 +85,13 @@ footer a:hover {
   text-align: center;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  #hero {
+    background: url("/assets/homePanel-small.png") no-repeat center center/cover;
+  }
+}
+
 #hero::before {
   content: "";
   position: absolute;
@@ -71,10 +102,12 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
+
 #hero h1 {
   font-size: 3rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
+
 #hero p {
   font-size: 1.25rem;
   margin-top: 1rem;
@@ -82,7 +115,8 @@ footer a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.btn-primary, .btn-success {
+.btn-primary,
+.btn-success {
   background-color: #28a745;
   border: none;
   padding: 0.5rem 1.5rem;
@@ -90,25 +124,37 @@ footer a:hover {
   text-transform: uppercase;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.btn-primary:hover, .btn-success:hover {
+
+.btn-primary:hover,
+.btn-success:hover {
   background-color: rgb(30.1449275362, 125.8550724638, 52);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.hero-section {
-  background-color: #ffffff;
-  padding: 3rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#hero {
+  position: relative;
+  filter: brightness(1.1); /* Lightens the background image slightly */
 }
-.hero-section h1 {
-  font-size: 2.5rem;
-  color: #343a40;
+
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Slightly lighter overlay */
+  z-index: 1;
 }
-.hero-section p {
-  font-size: 1.25rem;
-  margin: 1rem 0;
-  color: #6c757d;
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+#hero h1,
+#hero p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .same-size-img {
@@ -127,6 +173,7 @@ footer a:hover {
   background: url("/assets/homePanel.png") no-repeat center center fixed;
   background-size: cover;
 }
+
 .outer-container::before {
   content: "";
   position: absolute;
@@ -138,4 +185,45 @@ footer a:hover {
   z-index: 0;
 }
 
-/*# sourceMappingURL=fullStyle.css.map */
+/* Make text bold in the contact section */
+#contact h2,
+#contact p {
+  font-weight: bold;
+}
+
+/* Update button style to match the previous consistent design */
+#contact .btn-primary {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+  background-color: #388e3c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#faq {
+  background-color: #353333;
+  color: #e0e0e0; /* Light gray color for the general text */
+  font-weight: bold;
+}
+
+#faq h2,
+#faq p {
+  color: #e0e0e0; /* Ensures the heading and subtitle text is light gray */
+  font-weight: bold; /* Ensures the heading and subtitle are bold */
+}
+
+#faq .d-flex h5 {
+  color: cyan; /* Ensures question titles are in light gray */
+  font-weight: bold; /* Ensures the questions are bold */
+}
+
+#faq .d-flex p {
+  color: #e0e0e0; /* Ensures the answers are in light gray */
+}

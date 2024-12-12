@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="/styles/css/styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for icons -->
-</head>
-<body>
-  <div class="outer-container">
-    <div class="main">
-      <h2>Sign Up</h2>
-      <form action="/submit-signup" method="POST">
-        <div class="input-group">
-          <div class="input-icon">
-            <i class="fa fa-user"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sigle Page website" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles/css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for icons -->
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="main">
+        <h2>Sign Up</h2>
+        <form action="/submit-signup" method="POST">
+          <div class="input-group">
+            <div class="input-icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
           </div>
-          <input type="text" name="username" placeholder="Username" required>
-        </div>
-        <div class="input-group">
-          <div class="input-icon">
-            <i class="fa fa-envelope"></i>
+          <div class="input-group">
+            <div class="input-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <input type="email" name="email" placeholder="Email" required />
           </div>
-          <input type="email" name="email" placeholder="Email" required>
-        </div>
-        <div class="input-group">
-          <div class="input-icon">
-            <i class="fa fa-lock"></i>
+          <div class="input-group">
+            <div class="input-icon">
+              <i class="fa fa-lock"></i>
+            </div>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
           </div>
-          <input type="password" name="password" placeholder="Password" required>
-        </div>
-        <div class="input-group">
-          <div class="input-icon">
-            <i class="fa fa-lock"></i>
+          <div class="input-group">
+            <div class="input-icon">
+              <i class="fa fa-lock"></i>
+            </div>
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
           </div>
-          <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="haveAccount">
+          <p>
+            Already have an account? <a href="loginForm.html">Login here</a>.
+          </p>
         </div>
-        <button type="submit">Sign Up</button>
-      </form>
-      <div class="haveAccount">
-        <p>Already have an account? <a href="loginForm.html">Login here</a>.</p>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
